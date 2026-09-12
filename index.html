@@ -63,6 +63,8 @@
         .hero-left a img {
             max-width: 350px;
             width: 100%;
+            height: auto;
+            border-radius: 6px;
             transition: transform 0.2s;
         }
         .hero-left a img:hover {
@@ -79,7 +81,20 @@
         .hero-right p {
             font-size: 16px;
             color: #666;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+        }
+        .form-mockup {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .form-mockup input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            width: 100%;
+            outline: none;
         }
         .btn-submit {
             display: block;
@@ -173,13 +188,18 @@
     <section class="hero">
         <div class="hero-left">
             <a href="https://app.trcefy.com/click?pid=2&offer_id=19137&sub2=u539036&sub5=s1SUBID1HERE" target="_blank">
-                <img src="edeka-gift-cards.png" alt="Edeka Geschenkgutscheine" style="max-width: 350px; height: auto;">
+                <img src="edeka-gift-cards.png" alt="Edeka Voucher">
             </a>
         </div>
         <div class="hero-right">
             <h1>Gewinnen Sie einen 250€ Edeka-Gutschein!</h1>
             <p>Sichern Sie sich die Chance auf einen Edeka-Gutschein im Wert von 250€ für Ihre nächsten Großeinkäufe.</p>
             
+            <div class="form-mockup">
+                <input type="email" placeholder="E-Mail-Adresse" readonly>
+                <input type="text" placeholder="Postleitzahl" readonly>
+            </div>
+
             <a href="https://app.trcefy.com/click?pid=2&offer_id=19137&sub2=u539036&sub5=s1SUBID1HERE" target="_blank" class="btn-submit">Jetzt mitmachen & gewinnen!</a>
         </div>
     </section>
